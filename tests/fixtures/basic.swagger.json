@@ -1,0 +1,119 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Auto-Generated Swagger Documentation"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/class_as": {
+      "get": {
+        "description": "Returns a list of type class_a",
+        "responses": {
+          "200": {
+            "description": "list response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Creates an item of type class_a",
+        "parameters": [
+          {
+            "name": "class_a",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "create response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+            }
+          }
+        }
+      }
+    },
+    "/class_as/{id}": {
+      "get": {
+        "description": "Returns an item of type class_a by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "get by id response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Updates an item of type class_a",
+        "parameters": [
+          {
+            "name": "class_a",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "update item",
+            "schema": {
+              "$ref": "#/definitions/o*tests*basic*master*class*class_a"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Deletes an item of type class_a by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "delete item"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "o*tests*basic*master*class*class_a": {
+      "type": "object",
+      "properties": {
+        "property_a": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

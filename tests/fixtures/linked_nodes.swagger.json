@@ -1,0 +1,174 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Auto-Generated Swagger Documentation"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/class3S": {
+      "get": {
+        "description": "Returns a list of type class3",
+        "responses": {
+          "200": {
+            "description": "list response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Creates an item of type class3",
+        "parameters": [
+          {
+            "name": "class3",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "create response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+            }
+          }
+        }
+      }
+    },
+    "/class3S/{id}": {
+      "get": {
+        "description": "Returns an item of type class3 by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "get by id response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Updates an item of type class3",
+        "parameters": [
+          {
+            "name": "class3",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "update item",
+            "schema": {
+              "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class3"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Deletes an item of type class3 by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "delete item"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "o*tests*linked_nodes_1*0.1.0*class*class1": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class1"
+        },
+        "b": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*property*b"
+        }
+      }
+    },
+    "o*tests*linked_nodes_1*0.1.0*property*b": {
+      "type": "object",
+      "properties": {
+        "e": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class2"
+        }
+      }
+    },
+    "o*tests*linked_nodes_1*0.1.0*class*class2": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class1"
+        },
+        "c": {
+          "type": "string"
+        }
+      }
+    },
+    "o*tests*linked_nodes_2*master*class*class4": {
+      "type": "object",
+      "properties": {
+        "f": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class3"
+        }
+      }
+    },
+    "o*tests*linked_nodes_1*0.1.0*class*class3": {
+      "type": "object",
+      "properties": {
+        "d": {
+          "type": "string"
+        }
+      }
+    },
+    "o*tests*linked_nodes_2*master*class*class3": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class1"
+        },
+        "b": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*property*b"
+        },
+        "c": {
+          "$ref": "#/definitions/o*tests*linked_nodes_1*0.1.0*class*class1"
+        },
+        "d": {
+          "$ref": "#/definitions/o*tests*linked_nodes_2*master*class*class4"
+        }
+      }
+    }
+  }
+}

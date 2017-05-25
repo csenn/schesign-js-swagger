@@ -1,0 +1,248 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Auto-Generated Swagger Documentation"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/class1S": {
+      "get": {
+        "description": "Returns a list of type class1",
+        "responses": {
+          "200": {
+            "description": "list response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Creates an item of type class1",
+        "parameters": [
+          {
+            "name": "class1",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "create response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+            }
+          }
+        }
+      }
+    },
+    "/class1S/{id}": {
+      "get": {
+        "description": "Returns an item of type class1 by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "get by id response",
+            "schema": {
+              "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Updates an item of type class1",
+        "parameters": [
+          {
+            "name": "class1",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "update item",
+            "schema": {
+              "$ref": "#/definitions/o*tests*property_variations*master*class*class1"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Deletes an item of type class1 by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "delete item"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "o*tests*property_variations*master*property*f": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "boolean"
+        },
+        "f1": {
+          "$ref": "#/definitions/o*tests*property_variations*master*property*f1"
+        }
+      }
+    },
+    "o*tests*property_variations*master*property*f1": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "boolean"
+        }
+      }
+    },
+    "o*tests*property_variations*master*class*class2": {
+      "type": "object",
+      "properties": {}
+    },
+    "o*tests*property_variations*master*class*class1": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "boolean"
+        },
+        "a1": {
+          "type": "boolean"
+        },
+        "a2": {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        "a3": {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "a4": {
+          "type": "boolean"
+        },
+        "a5": {
+          "type": "boolean"
+        },
+        "a6": {
+          "type": "boolean"
+        },
+        "b": {
+          "type": "string"
+        },
+        "b1": {
+          "type": "string",
+          "pattern": "[a-z]"
+        },
+        "b2": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 10
+        },
+        "b3": {
+          "type": "string",
+          "format": "uri"
+        },
+        "b4": {
+          "type": "string",
+          "format": "email"
+        },
+        "b5": {
+          "type": "string",
+          "format": "hostname"
+        },
+        "c": {
+          "type": "number"
+        },
+        "c1": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "c2": {
+          "type": "integer"
+        },
+        "c3": {
+          "type": "integer"
+        },
+        "c4": {
+          "type": "integer"
+        },
+        "c5": {
+          "type": "integer"
+        },
+        "c6": {
+          "type": "integer"
+        },
+        "c7": {
+          "type": "number"
+        },
+        "c8": {
+          "type": "number"
+        },
+        "d": {
+          "enum": [
+            "one",
+            "two",
+            3,
+            4.5
+          ]
+        },
+        "e": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "e1": {
+          "type": "string"
+        },
+        "e2": {
+          "type": "string"
+        },
+        "f": {
+          "$ref": "#/definitions/o*tests*property_variations*master*property*f"
+        },
+        "g": {
+          "$ref": "#/definitions/o*tests*property_variations*master*class*class2"
+        }
+      },
+      "required": [
+        "a1"
+      ]
+    }
+  }
+}
